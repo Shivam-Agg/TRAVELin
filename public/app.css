@@ -1,0 +1,28 @@
+
+.form_input{
+    width : 40%;
+    margin:30px auto;
+}
+.delete{
+    display : inline;
+}
+
+.form_header{
+    text-align:center; 
+    margin:20px auto;
+   
+}
+
+.container{
+    margin:10px auto;
+}
+.index_img{
+    width: 100%;
+}
+.lead{
+    color:#ffffff;
+}
+#map{
+    width:500px;
+    height: 500px;
+}
