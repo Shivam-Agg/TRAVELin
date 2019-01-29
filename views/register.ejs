@@ -1,15 +1,16 @@
 <%include ./partials/header%>
 
 <div class="container">
-    <h1 style="text-align:center; margin:20px auto; color:#ffffff;">Sign up</h1>
-    <div style="width:35%; margin:30px auto">
+    <h1 class="form_header">Sign up</h1>
+    <div class="form_input">
           <form action="/register" method="POST">
             <div class="form-group">
               <input class="form-control"  type="text" name="username" placeholder="Username">
             </div>
             <div class="form-group">
-              <input class="form-control" type="password" name="password" placeholder="Password">
+              <input class="form-control" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password">
             </div>
+            <p><small>(Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters)</small></p>
             <button class="btn btn-primary btn-block">Register</button>
           </form>
     </div>
