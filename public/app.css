@@ -1,4 +1,8 @@
-
+body{
+   /* background-image: url(https://static1.squarespace.com/static/5459ec52e4b04d305f68f1ed/t/548a9644e4b0a171f6b28d53/1418368582035/Pattern15.jpg); 
+*/
+background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-049.jpg)
+}
 .form_input{
     width : 40%;
     margin:30px auto;
@@ -25,4 +29,10 @@
 #map{
     width:500px;
     height: 500px;
+}
+.bg-secondary{
+    color: #ffffff;
+}
+.bg-dark{
+    color: #ffffff;
 }

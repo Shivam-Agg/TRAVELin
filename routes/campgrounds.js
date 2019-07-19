@@ -37,8 +37,8 @@ router.post("/",middlewareObj.isLoggedIn, function(req,res){
             req.flash("error","Something went wrong")
         }else{
             console.log(campground);
-            req.flash("success","Campground added successfully")
-            res.redirect("/campgrounds");
+            req.flash("success","Site added successfully")
+            res.redirect("/places");
         }
     })
    
@@ -77,7 +77,7 @@ router.put("/:id",middlewareObj.checkCampgroundOwnership, function(req,res){
         if(err){
             console.log(err);
         }else{
-            res.redirect("/campgrounds/"+ campground._id);
+            res.redirect("/places/"+ campground._id);
         }
     })
 })
@@ -89,7 +89,7 @@ router.delete("/:id",middlewareObj.checkCampgroundOwnership, function(req,res){
             console.log(err);
         }else{
             req.flash("success","Campground deleted")
-            res.redirect("/campgrounds");
+            res.redirect("/places");
         }
     })
 })

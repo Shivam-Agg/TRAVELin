@@ -50,10 +50,10 @@ app.use(function(req,res,next){
     next();
 })
 
-app.use("/campgrounds/:id/comments", commentRoutes);
-app.use("/campgrounds", campgroundRoutes);
+app.use("/places/:id/comments", commentRoutes);
+app.use("/places", campgroundRoutes);
 app.use("/", indexRoutes);
 
-app.listen(process.env.PORT,process.env.IP,function(){
-    console.log("YelpCamp Server Has Started!");
+app.listen(3000,function(){
+    console.log("Travelin Server Has Started!");
 })
